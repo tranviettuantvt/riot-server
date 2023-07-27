@@ -3,7 +3,7 @@ const sequelize = require("./database");
 
 const Recipe = sequelize.define("recipes", {
   user_id: {
-    type: DataTypes.STRING,
+    type: DataTypes.STRING, 
     allowNull: false,
   },
   ingredient_id: {
@@ -31,7 +31,7 @@ const Recipe = sequelize.define("recipes", {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  rate: {
+  healthy: {
     type: DataTypes.STRING,
     allowNull: false,
   },
